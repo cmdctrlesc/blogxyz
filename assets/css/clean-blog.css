@@ -174,7 +174,7 @@ header.masthead {
   background-color: #868e96;
   background-attachment: scroll;
   position: relative;
-  background-size: cover;
+  background-size: 12em;
 }
 
 header.masthead .overlay {
