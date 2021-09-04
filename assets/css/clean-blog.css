@@ -6,8 +6,9 @@
 
  body {
   font-size: 20px;
-  color: #212529;
+  color: white;
   font-family: 'Lora', 'Times New Roman', serif;
+  background-color: black;
 }
 
 p {
@@ -27,6 +28,7 @@ h5,
 h6 {
   font-weight: 800;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:white;
 }
 
 a {
@@ -406,4 +408,8 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.customfooter {
+  width: 100%;
 }
