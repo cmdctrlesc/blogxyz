@@ -5,9 +5,10 @@
 {% block home %}
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+
     {% for post in posts %}
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post-preview">
         <a href="{% url 'blogpost' post.id %}">
           <h2 class="post-title">
@@ -17,13 +18,12 @@
             {{ post.subtitle }}
           </h3>
         </a>
-      {% endfor %}
-      <hr>
-      <!-- Pager -->
+      </div>
     </div>
   </div>
+      {% endfor %}
+
 </div>
 
-<hr>
 
 {% endblock %}
