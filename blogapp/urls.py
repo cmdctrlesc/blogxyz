@@ -21,9 +21,11 @@ from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.posts, name='posts'),
     path('about/', views.about, name='about'),
-    path('post/<int:pk>', views.post, name='blogpost')
+    path('post/<int:pk>', views.post, name='post'),
+    path('projects/', views.projects, name='projects'),
+    path('project/<int:pk>', views.project, name='project'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

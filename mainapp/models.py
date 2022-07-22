@@ -6,3 +6,7 @@ class BlogPost(models.Model):
     subtitle = models.TextField(default=" ")
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+
+
+class Project(BlogPost):
+    pass

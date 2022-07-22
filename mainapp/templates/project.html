@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load markdown_extras %}
+
+{% block maintitle %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="page-heading">
+        <h1>Projects</h1>
+        <span class="subheading">Turning real-life problems into code </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+<div class="container">
+
+{% block subtitle2 %}
+
+<div class="row">
+  <div class="col-lg-8 col-md-10 mx-auto">
+  <div class="post-preview">
+      <h3 class="post-title project" style='font-size: 1.4em;' >
+        {{ problem }}
+      </h3>
+      <h3 class="post-subtitle" style='font-weight: 400;'>
+        <b>{{ solution }} </b>
+      </h3>
+    </a>
+  </div>
+</div>
+</div>
+
+{% endblock %}
+
+</div>
+
+
+
+{% block post %}
+
+  <!-- Post Content -->
+    <div class='blogpost' class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          {{ content | markdown | safe }}
+
+  
+        </div>
+      </div>
+    </div>
+
+  <hr>
+
+{% endblock %}

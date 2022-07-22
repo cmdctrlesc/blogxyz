@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load markdown_extras %}
+
+
+{% block maintitle %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="page-heading">
+        <h1>Projects</h1>
+        <span class="subheading">Turning real-life problems into code </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block subtitle %}
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Instead of a traditional portfolio, here is a list of some real-life problems I’ve designed and written solutions for.  As much as I like to talk about the technical details of my code and their importance (click on the links for those), I believe this big picture overview is ultimately a better representation of the value of my work. At times, software engineers can’t see the forrest because of the trees, forgetting that at the end of the day the most important question one must ask about software is how well it solves a real life problem humans have. Thus it is more important to provide a great answer to the question ‘how are we going to solve this problem’ then ‘how are we going to implement the solution’. If you answer the first one in a suboptimal way, it doesn’t matter how wonderfully you can answer the second one. Then there is also the art of weighing these two questions against each other - how to maximize real-life impact of a solution while minimizing its technical complexity. It’s not difficult to do this well enough, but it’s very rare that it is done really well.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+
+{% endblock %}
+
+{% block projects %}
+
+<div class="container">
+
+    {% for project in projects %}
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <a href="{% url 'project' project.id %}">
+          <h3 class="post-title project" style='font-size: 1.4em;' >
+            {{ project.title }}
+          </h3>
+          <h3 class="post-subtitle" style='font-weight: 400;'>
+            <b>{{ project.subtitle }} </b>
+          </h3>
+        </a>
+      </div>
+    </div>
+  </div>
+      {% endfor %}
+
+</div>
+
+
+{% endblock %}
+

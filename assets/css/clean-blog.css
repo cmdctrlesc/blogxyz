@@ -18,6 +18,12 @@ p {
 
 p a {
   text-decoration: underline;
+  color:white;
+}
+
+li a {
+  text-decoration: underline;
+  color:white;
 }
 
 h1,
@@ -411,5 +417,15 @@ footer .copyright {
 }
 
 .blogpost {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.post-title.project {
+  font-weight: 100;
+  font-style:italic;
+
+}
+
+.container {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

@@ -26,7 +26,7 @@ SECRET_KEY = 'wky!k&t9_vzl6hmv)gbve@yyuxt@g0&*e$@)8k6)p4su%xzc_x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.cmdctrlesc.xyz']
 
 
 # Application definition
