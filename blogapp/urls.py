@@ -24,8 +24,7 @@ urlpatterns = [
     path('', views.posts, name='posts'),
     path('about/', views.about, name='about'),
     path('post/<int:pk>', views.post, name='post'),
-    path('projects/', views.projects, name='projects'),
-    path('project/<int:pk>', views.project, name='project'),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

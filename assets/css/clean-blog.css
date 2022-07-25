@@ -26,6 +26,12 @@ li a {
   color:white;
 }
 
+span a {
+  text-decoration: underline;
+  color:white;
+}
+
+
 h1,
 h2,
 h3,
